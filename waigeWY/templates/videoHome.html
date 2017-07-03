@@ -1,0 +1,73 @@
+<ion-view title="动态">
+    <ion-nav-buttons side="left">
+        <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="right">
+        <button menu-toggle="right" class="button button-icon icon ion-reply"></button>
+    </ion-nav-buttons>
+    <ion-content>
+        <input type="text" placeholder="🔍 搜索" style="width: 90%;height: 30px;border:1px solid #b2b2b2;margin-left: 20px;margin-top: 5px;border-radius: 5px;">
+
+        <ul style="display: flex;justify-content: space-around;border-bottom: 1px solid #b2b2b2;">
+            <li style="display: flex;flex-direction: column;align-items: center;">
+                <i class="icon ion-android-star" style="font-size: 40px;color: yellow;"></i>
+                好友动态
+            </li>
+
+            <li style="display: flex;flex-direction: column;align-items: center;">
+                <i class="icon ion-android-pin" style="font-size: 40px;color: red;"></i>
+                附近
+            </li>
+
+            <li style="display: flex;flex-direction: column;align-items: center;">
+                <i class="icon ion-ios-home" style="font-size: 40px;color: burlywood"></i>
+                兴趣部落
+            </li>
+        </ul>
+
+        <div class="list" style="margin-top: 20px;border-top: 1px solid #b2b2b2;">
+            <a class="item item-icon-left item-icon-right" href="">
+                <i class="icon ion-ios-game-controller-b" style="color: #0c60ee"></i>
+                游戏
+                <i class="icon ion-ios-arrow-right"></i>
+            </a>
+            <a class="item item-icon-left item-icon-right" href="">
+                <i class="icon ion-ios-navigate" style="color: #e6b500"></i>
+                日迹
+                <i class="icon ion-ios-arrow-right"></i>
+            </a>
+            <a class="item item-icon-left item-icon-right" href="">
+                <i class="icon ion-ios-paperplane" style="color: darkgoldenrod"></i>
+                动漫
+                <i class="icon ion-ios-arrow-right"></i>
+            </a>
+        </div>
+
+        <div style="margin-top: 20px;border-top: 2px solid #b2b2b2;overflow: scroll;height: 300px;" >
+            <h3>{{push[0].prompt}}</h3>
+            <div class="news" ng-repeat="pushNews in push">
+                <a  href="#" >
+                    <div >
+                        <div>
+                            <p style="color: black;font-size: 14px;text-align: center">{{pushNews.title}}</p>
+                            <span>
+                              <p style="color: black;font-size: 13px">{{pushNews.digest}}</p>
+                              <p style="color: black;float: right;">{{pushNews.ptime}}</p>
+                            </span>
+                        </div>
+                        <div>
+                            <span>
+                              <img ng-src="{{pushNews.imgsrc}}" style="width: 300px;height: 300px;margin-left: 40px">
+                            </span>
+                        </div>
+                    </div>
+                </a>
+                <hr>
+            </div>
+            <!--<li ng-click="yaowen()" class="update">更新推送</li>-->
+            <button class="button button-balanced" ng-click="yaowen()" class="update" style="margin-left: 145px">
+                更新推送
+            </button>
+        </div>
+    </ion-content>
+</ion-view>

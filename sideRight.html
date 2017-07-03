@@ -1,0 +1,63 @@
+<ion-view>
+
+
+    <div class="bar bar-positive" style="z-index: 100;text-align: center">
+        <p style="text-align: center;line-height: 30px;font-size: 16px"> < 联系人 </p>
+        <p style="text-align: center;line-height: 30px;font-size: 16px;margin-left: 25%">添加</p>
+    </div>
+
+
+
+    <ion-content class="padding">
+<!--<h1>我是右边设置</h1>-->
+    <ul ng-click="act()" style="display: flex;justify-content: space-around;border:1px solid #b2b2b2;height: 40px;margin-top: 50px;line-height: 40px">
+        <li id="myDIV">找人</li>
+        <li>找群</li>
+        <li>找公众号</li>
+    </ul>
+    <input type="text" placeholder="🔍 QQ号/手机号/群/公众号" style="margin-top: 5px;border:1px solid #b2b2b2;width: 100%">
+
+    <div class="list" style="margin-top: 10px">
+
+        <a class="item item-icon-left" href="#">
+            <i class="icon ion-person-add"></i>
+            添加手机联系人
+            <span class="item-note" style="float: left">
+              东邪大神、万祖、器物
+            </span>
+        </a>
+
+        <a class="item item-icon-left" href="#">
+            <i class="icon ion-ios-barcode-outline"></i>
+            扫一扫添加好友
+            <!--<i class="icon ion-ios-telephone-outline"></i>-->
+        </a>
+
+        <a class="item item-icon-left" href="#">
+            <i class="icon ion-person-stalker"></i>
+            面对面发起多人群聊
+            <span class="item-note" style="font-size: 13px">
+              与身边的朋友进入同一个多人聊天
+            </span>
+        </a>
+
+        <a class="item item-icon-left" href="#">
+            <i class="icon ion-ios-search-strong"></i>
+            按条件查找陌生人
+            <span class="item-note" style="float: left">
+                条件：女、18-27岁、郑州
+            </span>
+        </a>
+
+        <a class="item item-icon-left" href="#">
+            <i class="icon ion-location"></i>
+            查找附近的人
+            <!--<span class="badge badge-assertive">0</span>-->
+        </a>
+
+    </div>
+
+
+    </ion-content>
+
+</ion-view>

@@ -1,0 +1,36 @@
+<ion-view>
+    <ion-tabs class="tabs-icon-top tabs-color-active-positive">
+
+        <ion-tab title="消息" ui-sref="menu.content.wyHome" icon-off="ion-social-reddit-outline" icon-on="ion-social-reddit">
+            <ion-nav-bar class="bar bar-positive">
+                <ion-nav-back-button class="button">
+                    <i class="ion-arrow-left-c"></i> 后退
+                </ion-nav-back-button>
+            </ion-nav-bar>
+            <ion-nav-view name="wy"></ion-nav-view>
+        </ion-tab>
+
+        <ion-tab title="联系人" ui-sref="menu.content.musicHome" icon-off="ion-ios-people-outline" icon-on="ion-ios-people">
+            <!-- 标签 2 内容 -->
+            <ion-nav-bar class="bar bar-positive">
+                <ion-nav-back-button class="button">
+                    <i class="ion-arrow-left-c"></i> 后退
+                </ion-nav-back-button>
+            </ion-nav-bar>
+            <ion-nav-view name="music"></ion-nav-view>
+        </ion-tab>
+
+        <ion-tab title="动态" ui-sref="menu.content.videoHome" icon-off="ion-ios-bell-outline" icon-on="ion-ios-bell">
+            <!-- 标签 3 内容 -->
+            <ion-nav-bar class="bar bar-positive">
+                <ion-nav-back-button class="button">
+                    <!--<i class="ion-arrow-left-c"></i> 后退-->
+                </ion-nav-back-button>
+            </ion-nav-bar>
+
+            <ion-nav-view name="video"></ion-nav-view>
+        </ion-tab>
+
+    </ion-tabs>
+
+</ion-view>

@@ -1,0 +1,14 @@
+<ion-view title="新朋友详情">
+    <ion-content>
+        <div ng-repeat="ree in videoData">
+            <p>{{ree.text}}</p>
+            <!--<video style="width: 100%;" ng-src="{{ree.video_uri | trusted}}" controls></video>-->
+            <div class="videoDiv">
+                <video style="width: 100%;" ng-src="{{ ree.video_uri | trusted }}" controls></video>
+            </div>
+        </div>
+
+
+    </ion-content>
+
+</ion-view>

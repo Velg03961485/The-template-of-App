@@ -1,0 +1,102 @@
+<ion-view title="消息" class="">
+    <ion-nav-buttons side="left">
+        <!--<button menu-toggle="left" class="button_1">-->
+        <!--</button>-->
+        <span menu-toggle="left"  class="button_1">
+            <img src="res/head-img.jpg" style="width: 30px;height: 30px;border-radius: 50%">
+            <span style="background-color: red;width: 5px;height: 5px;border-radius: 50%;"></span>
+        </span>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="right">
+        <!--<button menu-toggle="right" class="ion-plus-round" style="color: white;background-color: #0a9dc7"></button>-->
+        <sapn menu-toggle="right" class="ion-plus-round" style="color: white;background-color: #0a9dc7;width: 30px;height: 30px;text-align: center;line-height: 30px"></sapn>
+    </ion-nav-buttons>
+
+    <ion-content>
+        <!--网易首页-->
+        <!--<button class="button badge-calm" ui-sref="menu.content.wyDetail">进入详情</button>-->
+        <div style="width: 90%;margin-left: 20px;border:1px solid #b2b2b2;margin-top: 5px;" id="box">
+            <input type="text" style="width: 100%;height: 28px;background-color: gainsboro;" placeholder="🔍搜索">
+            <ul style="width: 100%;overflow: scroll;z-index: 200">
+                <li ng-repeat=" activeList in hotList" class="gray">
+                    {{activeList.name}}
+                </li>
+            </ul>
+        </div>
+
+        <div style="z-index: -20">
+            <div class="button badge-calm" ui-sref="menu.content.wyDetail" style="width: 100%; height: 70px;margin-top: 6px;display: flex;justify-content: flex-start;background-color: white;border:1px solid #b2b2b2">
+                <div >
+                    <img src="res/qq-talk.jpg" style="width:50px;height: 50px;border-radius: 50%;margin-left: 5px;margin-top: 10px">
+                </div>
+                <div style="margin-left: 20px">
+                    <p style="font-size: 17px; height: 30px;word-spacing: 1%;">带你装逼带你飞</p>
+                    <p style="font-size: 12px;height: 30px;border: 1px solid white;line-height: 30px">王景隆：做做小抄</p>
+                </div>
+                <div style="margin-left: 100px">
+                    <p style="font-size: 15px; height: 30px;">12:48</p>
+                    <p style="font-size: 15px; height: 20px;border:1px solid red;text-align: center;line-height: 20px;background-color: red;color: white;border-radius: 49%">10</p>
+                </div>
+            </div>
+
+
+            <div class="button badge-calm" ui-sref="menu.content.wyDetail" style="width: 100%; height: 70px;margin-top: 6px;display: flex;justify-content: flex-start;background-color: white;border:1px solid #b2b2b2">
+                <div >
+                    <img src="res/qq-talk-1.jpg" style="width:50px;height: 50px;border-radius: 50%;margin-left: 5px;margin-top: 10px">
+                </div>
+                <div style="margin-left: 20px">
+                    <p style="font-size: 17px; height: 30px;word-spacing: 1%;">花好月圆</p>
+                    <p style="font-size: 12px;height: 30px;border: 1px solid white;line-height: 30px">米饭：爆炒小公鸡吗？</p>
+                </div>
+                <div style="margin-left: 100px">
+                    <p style="font-size: 15px; height: 30px;">12:48</p>
+                    <p style="font-size: 15px; height: 20px;border:1px solid red;text-align: center;line-height: 20px;background-color: red;color: white;border-radius: 49%">8</p>
+                </div>
+            </div>
+
+            <div class="button badge-calm" ui-sref="menu.content.wyDetail" style="width: 100%; height: 70px;margin-top: 6px;display: flex;justify-content: flex-start;background-color: white;border:1px solid #b2b2b2">
+                <div >
+                    <img src="res/qq-talk-2.jpg" style="width:50px;height: 50px;border-radius: 50%;margin-left: 5px;margin-top: 10px">
+                </div>
+                <div style="margin-left: 20px">
+                    <p style="font-size: 17px; height: 30px;word-spacing: 1%;">青云学院</p>
+                    <p style="font-size: 12px;height: 30px;border: 1px solid white;line-height: 30px">ionic: you need take u</p>
+                </div>
+                <div style="margin-left: 100px">
+                    <p style="font-size: 15px; height: 30px;">12:48</p>
+                    <p style="font-size: 15px; height: 20px;border:1px solid red;text-align: center;line-height: 20px;background-color: red;color: white;border-radius: 49%">15</p>
+                </div>
+            </div>
+
+            <div class="button badge-calm" ui-sref="menu.content.wyDetail" style="width: 100%; height: 70px;margin-top: 6px;display: flex;justify-content: flex-start;background-color: white;border:1px solid #b2b2b2">
+                <div >
+                    <img src="res/qq-talk-3.jpg" style="width:50px;height: 50px;border-radius: 50%;margin-left: 5px;margin-top: 10px">
+                </div>
+                <div style="margin-left: 20px">
+                    <p style="font-size: 17px; height: 30px;word-spacing: 1%;">我大电信班</p>
+                    <p style="font-size: 12px;height: 30px;border: 1px solid white;line-height: 30px">杰哥：找到工作了骚年</p>
+                </div>
+                <div style="margin-left: 100px">
+                    <p style="font-size: 15px; height: 30px;">12:48</p>
+                    <p style="font-size: 15px; height: 20px;border:1px solid red;text-align: center;line-height: 20px;background-color: red;color: white;border-radius: 49%">25</p>
+                </div>
+            </div>
+
+            <div class="button badge-calm" ui-sref="menu.content.wyDetail" style="width: 100%; height: 70px;margin-top: 6px;display: flex;justify-content: flex-start;background-color: white;border:1px solid #b2b2b2">
+                <div >
+                    <img src="res/qq-talk-4.jpg" style="width:50px;height: 50px;border-radius: 50%;margin-left: 5px;margin-top: 10px">
+                </div>
+                <div style="margin-left: 20px">
+                    <p style="font-size: 17px; height: 30px;word-spacing: 1%;">设计大咖秀</p>
+                    <p style="font-size: 12px;height: 30px;border: 1px solid white;line-height: 30px">pter：JS and CSS sho</p>
+                </div>
+                <div style="margin-left: 100px">
+                    <p style="font-size: 15px; height: 30px;">12:48</p>
+                    <p style="font-size: 15px; height: 20px;border:1px solid red;text-align: center;line-height: 20px;background-color: red;color: white;border-radius: 49%">1</p>
+                </div>
+            </div>
+        </div>
+
+
+    </ion-content>
+</ion-view>
